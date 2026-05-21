@@ -22,10 +22,10 @@ export function Footer() {
         <div className="text-sm space-y-3">
           <p className="text-xs uppercase tracking-[0.25em] opacity-60 mb-4">Contato</p>
           <a href="mailto:psico.vrs@gmail.com" className="flex items-center gap-2 opacity-85 hover:opacity-100">
-            <Mail size={14} /> psico.vrs@gmail.com
+            <Mail size={14} /><span>psico.vrs@gmail.com</span>
           </a>
           <a href="https://wa.me/5511969438599" className="flex items-center gap-2 opacity-85 hover:opacity-100">
-            <Phone size={14} /> +55 11 96943-8599
+            <Phone size={14} /><span>+55 11 96943-8599</span>
           </a>
           <div className="flex items-center gap-4 pt-3">
             <a href="https://www.instagram.com/vrs_neuropsicologia" aria-label="Instagram"><Instagram size={18} /></a>
