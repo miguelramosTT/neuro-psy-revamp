@@ -114,9 +114,9 @@ function Home() {
               Ampla experiência em psicoterapia, avaliação neuropsicológica em todas as faixas
               etárias, treino cognitivo e reabilitação neurocognitiva centrada na pessoa.
             </p>
-            <Link to="/sobre" className="inline-flex items-center gap-2 mt-8 text-olive text-xs tracking-[0.25em] uppercase border-b border-olive/40 pb-1 hover:border-olive">
-              Conheça minha trajetória <ArrowRight size={14} />
-            </Link>
+            <a href={WHATSAPP} target="_blank" rel="noopener" className="inline-flex items-center gap-2 mt-8 text-olive text-xs tracking-[0.25em] uppercase border-b border-olive/40 pb-1 hover:border-olive">
+              Falar no WhatsApp <ArrowRight size={14} />
+            </a>
           </div>
         </div>
       </section>
