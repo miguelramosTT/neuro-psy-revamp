@@ -1,23 +1,15 @@
-import { Link } from "@tanstack/react-router";
 import { Instagram, Facebook, Linkedin, Mail, Phone } from "lucide-react";
 
 export function Footer() {
   return (
     <footer className="bg-olive-deep text-cream mt-32">
-      <div className="mx-auto max-w-6xl px-6 py-20 grid md:grid-cols-3 gap-12">
+      <div className="mx-auto max-w-6xl px-6 py-20 grid md:grid-cols-2 gap-12">
         <div>
           <p className="font-serif text-2xl tracking-[0.18em]">VRS</p>
           <p className="font-serif text-xs tracking-[0.35em] mt-1 opacity-80">NEUROPSICOLOGIA</p>
           <p className="mt-6 text-sm opacity-75 leading-relaxed max-w-xs">
             Avaliação neuropsicológica em São Paulo. Atendimento presencial e online.
           </p>
-        </div>
-        <div className="text-sm space-y-3">
-          <p className="text-xs uppercase tracking-[0.25em] opacity-60 mb-4">Navegação</p>
-          <Link to="/" className="block opacity-85 hover:opacity-100">Início</Link>
-          <Link to="/sobre" className="block opacity-85 hover:opacity-100">Sobre</Link>
-          <Link to="/servicos" className="block opacity-85 hover:opacity-100">Serviços</Link>
-          <Link to="/contato" className="block opacity-85 hover:opacity-100">Contato</Link>
         </div>
         <div className="text-sm space-y-3">
           <p className="text-xs uppercase tracking-[0.25em] opacity-60 mb-4">Contato</p>
