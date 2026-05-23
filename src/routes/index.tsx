@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { Layout } from "@/components/Layout";
 import viviane from "@/assets/viviane.jpg";
 import logo from "@/assets/logo.png";
@@ -45,9 +45,6 @@ function Home() {
               <a href={WHATSAPP} target="_blank" rel="noopener" className="inline-flex items-center gap-2 bg-cream text-olive-deep px-8 py-4 text-xs tracking-[0.25em] uppercase hover:bg-cream/90 transition-colors">
                 Agendar avaliação <ArrowRight size={14} />
               </a>
-              <Link to="/servicos" className="text-cream/90 text-xs tracking-[0.25em] uppercase border-b border-cream/40 pb-1 hover:border-cream">
-                Conheça os serviços
-              </Link>
             </div>
           </div>
           <div className="md:col-span-5 hidden md:flex justify-end">
