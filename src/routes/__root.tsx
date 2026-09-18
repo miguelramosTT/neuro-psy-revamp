@@ -86,7 +86,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6220b44b-8cf4-4b0a-832d-4d6f5aa5dc0f/id-preview-7199b9b0--10a78952-1ea1-4730-bb74-7bcd84ba61f2.lovable.app-1779394745337.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6220b44b-8cf4-4b0a-832d-4d6f5aa5dc0f/id-preview-7199b9b0--10a78952-1ea1-4730-bb74-7bcd84ba61f2.lovable.app-1779394745337.png" },
     ],
-    links: [{ rel: "stylesheet", href: appCss }],
+    links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" },
+      { rel: "stylesheet", href: appCss },
+    ],
     scripts: [
       {
         type: "application/ld+json",
@@ -115,7 +120,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <HeadContent />
       </head>
