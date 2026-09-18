@@ -53,8 +53,8 @@ function Sobre() {
           </p>
           <p>
             Tenho ampla experiência em psicoterapia, avaliação neuropsicológica em todas as
-            faixas etárias, treino cognitivo e reabilitação neurocognitiva centrada na pessoa
-            , unindo ciência, tecnologia e sensibilidade clínica.
+            faixas etárias, treino cognitivo e reabilitação neurocognitiva centrada na pessoa,
+            unindo ciência, tecnologia e sensibilidade clínica.
           </p>
 
           <div className="border-l-2 border-olive pl-6 mt-10">
