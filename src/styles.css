@@ -2,8 +2,6 @@
 @source "../src";
 @import "tw-animate-css";
 
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap");
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -41,7 +39,7 @@
 :root {
   --radius: 0.25rem;
 
-  /* Brand palette — VRS Neuropsicologia */
+  /* Paleta da marca VRS Neuropsicologia */
   --olive: oklch(0.42 0.07 128);          /* main dark olive green */
   --olive-deep: oklch(0.32 0.06 128);     /* deeper olive */
   --cream: oklch(0.96 0.02 90);           /* off-white cream */

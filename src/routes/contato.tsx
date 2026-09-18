@@ -9,6 +9,8 @@ export const Route = createFileRoute("/contato")({
       { name: "description", content: "Agende sua avaliação neuropsicológica em São Paulo. Atendimento presencial e online com Viviane Rocha (CRP 06/167235)." },
       { property: "og:title", content: "Contato · VRS Neuropsicologia" },
       { property: "og:description", content: "Fale com a VRS Neuropsicologia em São Paulo." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { property: "og:url", content: "/contato" },
     ],
     links: [{ rel: "canonical", href: "/contato" }],

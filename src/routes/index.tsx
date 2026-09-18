@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout } from "@/components/Layout";
-import viviane from "@/assets/viviane.jpg";
+import { OurSpaceCarousel } from "@/components/OurSpaceCarousel";
+import vivianeAsset from "@/assets/viviane-2026.jpg.asset.json";
 import logo from "@/assets/logo.png";
 import { ArrowRight, Brain, HeartHandshake, GraduationCap, Sparkles } from "lucide-react";
 
@@ -11,6 +12,8 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Avaliação Neuropsicológica em São Paulo com a neuropsicóloga Viviane Rocha. Investigação detalhada de atenção, memória, linguagem e raciocínio. Presencial e online." },
       { property: "og:title", content: "Avaliação Neuropsicológica em São Paulo · VRS Neuropsicologia" },
       { property: "og:description", content: "Especialista em Neuropsicologia pela UNIFESP. Atendimento humano, técnico e baseado em evidências em São Paulo." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
@@ -23,7 +26,7 @@ const WHATSAPP = "https://wa.me/5511969438599?text=Ol%C3%A1!%20Gostaria%20de%20a
 function Home() {
   return (
     <Layout>
-      {/* HERO — SEO highlight */}
+      {/* Destaque principal de SEO */}
       <section className="relative bg-olive text-cream overflow-hidden">
         <div className="absolute inset-0 opacity-[0.07] pointer-events-none">
           <img src={logo} alt="" className="absolute -right-32 top-1/2 -translate-y-1/2 w-[700px]" />
@@ -38,8 +41,8 @@ function Home() {
             </h1>
             <p className="mt-8 max-w-xl text-cream/85 leading-relaxed text-lg font-light">
               Cuidado clínico que une ciência, sensibilidade e escuta qualificada.
-              Avaliação detalhada das funções cognitivas — atenção, memória,
-              linguagem e raciocínio — com direcionamento claro para cada história.
+              Avaliação detalhada das funções cognitivas (atenção, memória,
+              linguagem e raciocínio), com direcionamento claro para cada história.
             </p>
             <div className="mt-12 flex flex-wrap gap-4 items-center">
               <a href={WHATSAPP} target="_blank" rel="noopener" className="inline-flex items-center gap-2 bg-cream text-olive-deep px-8 py-4 text-xs tracking-[0.25em] uppercase hover:bg-cream/90 transition-colors">
@@ -79,7 +82,7 @@ function Home() {
           {[
             { icon: HeartHandshake, t: "Presença", d: "Escuta qualificada, vínculo terapêutico genuíno e respeito ao ritmo de cada pessoa." },
             { icon: Brain, t: "Ciência", d: "Avaliação fundamentada em evidências, instrumentos validados e prática atualizada." },
-            { icon: Sparkles, t: "Humanidade", d: "Cuidado que vai além dos sintomas — sensível, técnico e profundamente humano." },
+            { icon: Sparkles, t: "Humanidade", d: "Cuidado que vai além dos sintomas: sensível, técnico e profundamente humano." },
           ].map((p) => (
             <div key={p.t} className="bg-background p-10">
               <p.icon className="text-olive" size={28} strokeWidth={1.2} />
@@ -94,7 +97,7 @@ function Home() {
       <section className="bg-cream">
         <div className="mx-auto max-w-6xl px-6 py-24 md:py-32 grid md:grid-cols-12 gap-12 items-center">
           <div className="md:col-span-5">
-            <img src={viviane} alt="Viviane Rocha, neuropsicóloga em São Paulo" width={1024} height={1024} className="w-full aspect-[4/5] object-cover" />
+            <img src={vivianeAsset.url} alt="Viviane Rocha, neuropsicóloga em São Paulo" width={768} height={1152} className="w-full aspect-[3/4] object-cover object-top" />
           </div>
           <div className="md:col-span-6 md:col-start-7">
             <p className="text-xs tracking-[0.35em] uppercase text-olive">Sobre mim</p>
@@ -126,7 +129,7 @@ function Home() {
         </div>
         <div className="grid md:grid-cols-2 gap-px bg-border">
           {[
-            { icon: Brain, t: "Avaliação Neuropsicológica", d: "Processo detalhado que investiga atenção, memória, linguagem e raciocínio — oferecendo clareza e direcionamento clínico." },
+            { icon: Brain, t: "Avaliação Neuropsicológica", d: "Processo detalhado que investiga atenção, memória, linguagem e raciocínio, oferecendo clareza e direcionamento clínico." },
             { icon: HeartHandshake, t: "Psicoterapia", d: "Espaço de acolhimento e transformação. Autoconhecimento, fortalecimento emocional e estratégias para os desafios do dia a dia." },
             { icon: Sparkles, t: "Reabilitação Cognitiva", d: "Estimulação e fortalecimento de memória, atenção e organização, favorecendo autonomia e qualidade de vida." },
             { icon: GraduationCap, t: "Orientação Familiar & Escolar", d: "Suporte especializado para compreender dificuldades comportamentais e emocionais, no ambiente familiar e escolar." },
@@ -139,6 +142,8 @@ function Home() {
           ))}
         </div>
       </section>
+
+      <OurSpaceCarousel />
 
       {/* CTA */}
       <section className="bg-olive-deep text-cream">

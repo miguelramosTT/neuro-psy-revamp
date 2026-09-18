@@ -10,6 +10,8 @@ export const Route = createFileRoute("/servicos")({
       { name: "description", content: "Avaliação Neuropsicológica em São Paulo, psicoterapia, reabilitação cognitiva e orientação familiar e escolar. Atendimento presencial e online." },
       { property: "og:title", content: "Serviços · VRS Neuropsicologia" },
       { property: "og:description", content: "Avaliação neuropsicológica, psicoterapia, reabilitação cognitiva e orientação familiar em São Paulo." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { property: "og:url", content: "/servicos" },
     ],
     links: [{ rel: "canonical", href: "/servicos" }],
@@ -23,7 +25,7 @@ const services = [
   {
     icon: Brain,
     title: "Avaliação Neuropsicológica em São Paulo",
-    desc: "Processo detalhado que investiga funções cognitivas como atenção, memória, linguagem, raciocínio e funções executivas — oferecendo clareza diagnóstica e direcionamento clínico.",
+    desc: "Processo detalhado que investiga funções cognitivas como atenção, memória, linguagem, raciocínio e funções executivas, oferecendo clareza diagnóstica e direcionamento clínico.",
     bullets: ["Crianças, adolescentes, adultos e idosos", "Instrumentos validados", "Relatório completo", "Devolutiva clínica"],
     featured: true,
   },
